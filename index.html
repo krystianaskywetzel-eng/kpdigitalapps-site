@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KP Digital · Apps for Busy Families</title>
+<meta name="description" content="KP Digital makes simple apps and free printables for busy families, starting with Sight Word Buddy.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Andika:wght@700&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<style>
+  /* Layout: a short studio page — name, one line of purpose, then a shelf of apps */
+  :root {
+    --bg: #F7F8F5;
+    --ink: #1D2421;
+    --muted: #5B655F;
+    --line: #DCE3DD;
+    --card: #FFFFFF;
+    --green: #2FA84F;
+    --display: "Andika", "Atkinson Hyperlegible", system-ui, sans-serif;
+    --body: "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { color-scheme: light; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 var(--body); }
+  .wrap { max-width: 880px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 48px 40px; }
+  a { color: var(--green); }
+  a:focus-visible { outline: 3px solid var(--green); outline-offset: 3px; }
+  .mark { display: inline-grid; place-items: center; width: 44px; height: 44px; border-radius: 12px; background: var(--ink); color: #fff; font: 700 20px/1 var(--display); }
+  h1 { font: 700 clamp(36px, 6vw, 56px)/1.05 var(--display); margin: 20px 0 12px; text-wrap: balance; }
+  .lede { color: var(--muted); max-width: 32em; margin: 0 0 48px; font-size: 19px; }
+  .label { font: 700 13px/1 var(--body); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 14px; }
+  .shelf { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .app { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 24px; display: grid; gap: 10px; min-width: 0; }
+  .app h2 { font: 700 24px/1.15 var(--display); margin: 0; display: flex; align-items: center; gap: 10px; }
+  .dot { width: 12px; height: 12px; border-radius: 50%; background: var(--green); flex: none; }
+  .app p { margin: 0; color: var(--muted); }
+  .links { display: flex; flex-wrap: wrap; gap: 8px 18px; font-weight: 700; margin-top: 4px; }
+  .soon { border-style: dashed; background: transparent; }
+  .soon h2 { color: var(--muted); }
+  footer { margin-top: 56px; font-size: 14px; color: var(--muted); }
+  @media (max-width: 640px) { .shelf { grid-template-columns: 1fr; } .wrap { padding-block: 32px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <span class="mark" aria-hidden="true">KP</span>
+  <h1>Simple apps for busy families</h1>
+  <p class="lede">KP Digital builds small, focused apps and free printables for the parts of family life that eat up weeknights.</p>
+
+  <p class="label">Apps</p>
+  <div class="shelf">
+    <section class="app">
+      <h2><span class="dot"></span>Sight Word Buddy</h2>
+      <p>Weekly sight word practice for pre-K and kindergarten. Snap the teacher's list, swipe through cards, and see which words are truly mastered.</p>
+      <div class="links">
+        <a href="https://sightwordbuddy.app">Free printables</a>
+        <a href="https://apps.apple.com/us/app/id6794677951" rel="noopener">App Store</a>
+      </div>
+    </section>
+    <section class="app soon">
+      <h2>More on the way</h2>
+      <p>New apps and printables will show up here as they're ready.</p>
+    </section>
+  </div>
+
+  <footer>© 2026 KP Digital</footer>
+</div>
+</body>
+</html>
